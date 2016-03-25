@@ -70,13 +70,13 @@ architecture structural of t5l_cunanan_deGuzman is
 		a7: component andGate port map(h, buzzers(3), buzzers(1)); -- andGate the value of third in buzzer and second out buzzer
 		a8: component andGate port map(i, buzzers(3), buzzers(0)); -- andGate the value of third in buzzer and third out buzzer
 		
-		o1: component orGate port map(orOut1, a,b); -- andGate the value of third in buzzer and first out buzzer
-		o2: component orGate port map(orOut2, c,d); 
-		o3: component orGate port map(orOut3, e,f); 
-		o4: component orGate port map(orOut4, g,h); 
-		o5: component orGate port map(orOut5, orOut1,orOut2); 
-		o6: component orGate port map(orOut6, orOut3,orOut4); 
-		o7: component orGate port map(orOut7, orOut5,orOut6); 
-		final: component orGate port map(alarm, orOut7, i); 
+		o1: component orGate port map(orOut1, a,b); -- orGate the result of a0 and a1
+		o2: component orGate port map(orOut2, c,d); -- orGate the result of a2 and a3 
+		o3: component orGate port map(orOut3, e,f); -- orGate the result of a4 and a5
+		o4: component orGate port map(orOut4, g,h); -- orGate the result of a6 and a7 
+		o5: component orGate port map(orOut5, orOut1,orOut2); -- orGate the result of o1 and o2
+		o6: component orGate port map(orOut6, orOut3,orOut4); -- orGate the result of o3 and o4
+		o7: component orGate port map(orOut7, orOut5,orOut6); -- orGate the result of o5 and o6 
+		final: component orGate port map(alarm, orOut7, i); -- orGate the result of 07 and i for the final result for the alarm
 		
 end architecture structural;
