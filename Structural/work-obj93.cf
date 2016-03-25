@@ -1,0 +1,11 @@
+v 3
+file . "t5l_cunanan_deGuzman_tb.vhdl" "20160325162750.000" "20160326003231.697":
+  entity t5l_cunanan_deguzman_tb at 5( 139) + 0 on 45;
+  architecture tb of t5l_cunanan_deguzman_tb at 14( 470) + 0 on 46;
+file . "t5l_cunanan_deGuzman.vhdl" "20160325162904.000" "20160326003230.435":
+  entity andgate at 6( 205) + 0 on 39;
+  architecture and2 of andgate at 14( 364) + 0 on 40;
+  entity orgate at 19( 495) + 0 on 41;
+  architecture or2 of orgate at 27( 651) + 0 on 42;
+  entity t5l_cunanan_deguzman at 38( 1034) + 0 on 43;
+  architecture structural of t5l_cunanan_deguzman at 45( 1217) + 0 on 44;
